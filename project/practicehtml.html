@@ -1,5 +1,5 @@
-<? xml version = "1.0" encoding = "utf-8" ?>
-< !DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml" xml: lang="en" lang="en">
         <head>
             <link rel="stylesheet" type="text/css" href="practicestylesheeta.css" />
@@ -15,4 +15,16 @@
                 <li class="flex-item-C">F</li>
             </ul>
         </body>
+        <head>
+            <script>
+                
+            const options = {
+	            authProvider,
+            };
+
+            const client = Client.init(options);
+                let res = await client.api('/teams/{id}/channels').get();
+                console.log( res )
+            </script>
+        </head> 
     </html>
